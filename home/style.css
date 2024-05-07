@@ -1,0 +1,89 @@
+.transformdesign {
+    width: 50%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    padding: 20px;
+    /* transform: translateX(200%);
+    transform: translatey(200%); */
+    /* transform:rotateZ(20deg) ; */
+    /* transition-duration: 2s; */
+}
+
+.transformdesign:hover {
+    color: black;
+    background-color: blue;
+    /* transition: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out; */
+
+    /* ###### ANimations */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: howerAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: in;
+    animation-direction: alternate;
+
+}
+
+@keyframes howerAnimation {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        color: black;
+        background-color: green;
+        transform: translatey(50%);
+    }
+
+    100% {
+        background-color: yellow;
+        transform: translateX(50%);
+    }
+}
+
+.imgstyle {
+    color: yellow;
+    background-color: brown;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.imgstyle:hover {
+    color: purple;
+    background-color: red;
+    padding: 5%;
+
+    animation-name: imgAnimation;
+    animation-duration: 1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes imgAnimation {
+
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        color: black;
+        background-color: green;
+    }
+
+    80% {
+        color: black;
+        background-color: rgb(0, 0, 0);
+        }
+
+    100% {
+        background-color: yellow;
+        transform: rotatez(360deg);
+    }
+}
