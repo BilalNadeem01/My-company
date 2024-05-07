@@ -25,7 +25,7 @@
     animation-name: howerAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: in;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 
 }
@@ -52,6 +52,7 @@
     background-color: brown;
     width: 50%;
     margin-left: 20%;
+    padding: 5%;
 }
 
 .imgstyle:hover {
@@ -86,4 +87,13 @@
         background-color: yellow;
         transform: rotatez(360deg);
     }
+}
+
+.btn{
+    background-color:black;
+    color: blue;
+    width:6%;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 50%;
 }
